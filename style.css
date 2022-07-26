@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "CreamCake";
+  src: url(fonts/CreamCake.otf);
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url(fonts/roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: "RobotoLight";
+  src: url(fonts/roboto/Roboto-Light.ttf);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: rgb(189, 220, 238);
+  background-image: url("img/time-for-taxes-reminder-concept-big-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 2% 0;
+}
+
+.choose-info {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 80px;
+  padding-top: 20px;
+}
+
+.field-input-date {
+  padding-left: 40px;
+}
+
+.input-date input {
+  margin-top: 7px;
+  padding: 10px 20px;
+  font-size: 23px;
+  font-family: "RobotoLight";
+  color: gray;
+  border-radius: 5px;
+}
+
+.ok {
+  padding: 10px 10px;
+  font-size: 23px;
+  font-family: "RobotoBold";
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(62, 64, 64);
+}
+
+.field-input-name {
+  padding-left: 40px;
+}
+
+.input-name input {
+  margin-top: 7px;
+  padding: 10px 20px;
+  font-size: 23px;
+  font-family: "RobotoLight";
+  color: gray;
+  border-radius: 5px;
+}
+
+.btn-create {
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+.btn-create button {
+  padding: 10px 30px;
+  font-size: 35px;
+  font-family: "RobotoBold";
+  background-color: white;
+  text-transform: uppercase;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px black;
+}
+
+.heading-title {
+  font-family: "CreamCake";
+  font-size: 95px;
+  line-height: 0.5em;
+  padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-left: 40px;
+}
+
+h3 {
+  font-family: "RobotoBold";
+  font-size: 30px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-left: 40px;
+}
+
+.pics {
+  margin-top: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 40px;
+}
+
+.pic {
+  margin-right: 1%;
+  width: 24%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pic img {
+  width: 100%;
+}
+
+.pic-selected {
+  outline: 5px solid black;
+  outline-offset: -8px;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popap-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.popup-content {
+  border-radius: 5px;
+  background-color: white;
+  max-width: 50%;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.8s ease 0s;
+  line-height: 1em;
+}
+
+.popup-title {
+  font-family: "RobotoBold";
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.popup-text {
+  font-family: "RobotoLight";
+  font-size: 25px;
+  margin-bottom: 15px;
+  line-height: 1.5em;
+}
+
+.popup-close {
+  padding: 13px 50px;
+  outline: 2px solid white;
+  outline-offset: -3px;
+  background-color: black;
+  color: white;
+  font-family: "RobotoBold";
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+@media all and (min-width: 900px) and (max-width: 1100px) {
+  .heading-title {
+    font-size: 55px;
+  }
+}
+
+@media all and (min-width: 501px) and (max-width: 899px) {
+  .heading-title {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .btn-create {
+    padding: 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 90px;
+    line-height: 0.8em;
+  }
+
+  h3 {
+    font-size: 45px;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 1%;
+  }
+
+  .heading-title {
+    margin-top: 1%;
+  }
+
+  .field-input-date input,
+  .field-input-name input {
+    font-size: 40px;
+  }
+
+  .ok {
+    padding: 10px 10px;
+    font-size: 40px;
+  }
+
+  .pics {
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: 20px;
+  }
+
+  .pic {
+    width: 49%;
+    margin-bottom: 1%;
+  }
+
+  .popup-content {
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .popup-title {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+
+  .popup-text {
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 1.2em;
+  }
+
+  .choose-info {
+    text-align: center;
+  }
+
+  .field-input-date,
+  .field-input-name {
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .choose-info {
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  .heading-title {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .btn-create {
+    padding: 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 55px;
+    line-height: 0.8em;
+  }
+
+  h3 {
+    font-size: 22px;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .field-input-date input,
+  .field-input-name input {
+    font-size: 20px;
+  }
+
+  .ok {
+    padding: 10px 10px;
+    font-size: 20px;
+  }
+
+  .pics {
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: 20px;
+  }
+
+  .pic {
+    width: 49%;
+    margin-bottom: 1%;
+  }
+
+  .popup-content {
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .popup-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .popup-text {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.2em;
+  }
+
+  .choose-info {
+    text-align: center;
+  }
+
+  .field-input-date,
+  .field-input-name {
+    padding: 0;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create your own timer!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="choose-info">
+      <div class="input-date">
+        <label>
+          <h3>Your big date:</h3>
+          <div class="field-input-date">
+            <input id="date" type="date" />
+            <button class="ok date-submit">ok</button>
+          </div>
+        </label>
+      </div>
+
+      <div class="input-name">
+        <label>
+          <h3>the name of your date:</h3>
+          <div class="field-input-name">
+            <input id="name" type="text" placeholder="the name of your date" />
+            <button class="ok name-submit">ok</button>
+          </div>
+        </label>
+      </div>
+
+      <div class="choose-img">
+        <h3>Choose a background picture:</h3>
+
+        <div class="pics">
+          <div class="pic" id="img/merry-christmas.jpg">
+            <img src="img/merry-christmas.jpg" alt="new year, christmas" />
+          </div>
+
+          <div class="pic" id="img/birthday.jpg">
+            <img src="img/birthday.jpg" alt="birthday" />
+          </div>
+
+          <div class="pic" id="img/wedding.jpg">
+            <img src="img/wedding.jpg" alt="wedding" />
+          </div>
+
+          <div class="pic" id="img/holiday.jpg">
+            <img src="img/holiday.jpg" alt="holiday" />
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-create">
+        <button id="submit-timer">
+          <a href="index2.html">Create!</a>
+        </button>
+      </div>
+
+      <div class="heading-title">
+        <h1>Create your own timer</h1>
+      </div>
+    </div> 
+
+    <div class="popup">
+      <div class="popup-body">
+        <div class="popup-content">
+          <div class="popup-title">Something went wrong :)</div>
+          <div class="popup-text">ooops :)</div>
+          <button class="popup-close">ok</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="index.js"></script>
+</html>
